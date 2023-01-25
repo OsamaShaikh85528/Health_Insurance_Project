@@ -1,0 +1,42 @@
+<html>
+<head>
+         <title>MEDICAL HEALTH INSURANCE</title>
+</head>
+<body background="D:\Projects\New Project Data\static\health_insurance.png">
+<center>
+<h1>HEALTH INSURANCE PREDICTOR FORM</h1>
+</center>
+
+<form action="http://127.0.0.1:5000/predict_charges" method="POST">
+
+<p><b><h2>Username</h2></b></p>
+<input type="text" name="name" placeholder="Enter Name"/>    
+
+<p><b><h2> Age: </h2></b></p>
+<input type="text" name="age" placeholder="Enter Age"/>
+
+<p><b><h2> Sex: </h2></b></p>
+<input type="radio" name="sex" value="male"/>male
+<input type="radio" name="sex" value="female"/>female
+
+<p><b><h2>BMI: </h2></b></p>
+<input type="text" name="bmi" placeholder="BMI"/>
+
+<p><b><h2> Children: </h2></b></p>
+<input type="text" name="children" placeholder=0 />
+
+<p><b><h2> Smoker: </h2></b></p>
+<input type="radio" name="smoker" value="yes"/>yes
+<input type="radio" name="smoker" value="no"/>no
+
+<p><b><h2> Region: </h2></b></p>
+<select name="region">
+    <option value="northeast"> region_northeast </option>
+    <option value="northwest"> region_northwest </option>
+    <option value="southeast"> region_southeast </option>
+    <option value="southeast"> region_southeast </option>
+</select>
+<br><br><button type="submit"> CALCULATE YOUR CHARGES </button>
+</form>
+</body>
+</html>
